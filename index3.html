@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+<title>Down the rabbit hole...</title>
+<style>
+body {
+	background-color:#200f25;
+</style>
+</head>
+
+<body>
+
+<h1 class="direction" style="color:#f1e1fc"> Use your mouse <br>to explore.</h1>
+
+<img class="wonderland" src="images/wonderland1.gif" usemap="#wonderlandmap">
+
+<map name="wonderlandmap">
+ <area shape="rect" coords="450,170,600,300" id="cat" style="cursor:pointer" onclick="catModal()">
+ <area shape="rect" coords="500,350,600,450" id="tail" style="cursor:pointer" onclick="tailModal()">
+ <area shape="rect" coords="250,500,425,650" id="mushroom1" style="cursor:pointer" onclick="mushroom1Modal()">
+ <area shape="rect" coords="950,580,1100,680" id="mushroom2" style="cursor:pointer"onclick="mushroom2Modal()">
+ <area shape="rect" coords="700,390,880,580" id="rabbit" style="cursor:pointer"onclick="rabbitModal()">
+</map>
+
+<div id="catModal" class="modal">
+ 	<h1 class="close">&times;</h1>
+ 	<p>I'm getting the strange feeling that someone is watching me...</p>
+ </div>
+
+<div id="tailModal" class="modal">
+ 	<h1 class="close">&times;</h1>
+ 	<p>This is the softest plant I've ever touched!</p>
+ </div>
+
+<div id="mushroom1Modal" class="modal">
+    <h1 class="close">&times;</h1>
+    <p>We don't grow these ones in our garden...</p>
+  </div>
+
+<div id="mushroom2Modal" class="modal">
+    <h1 class="close">&times;</h1>
+    <p>I wonder what these mushrooms taste like.</p>
+  </div>
+
+ <div id="rabbitModal" class="modal">
+    <h1 class="close">&times;</h1>
+    <p>Wait up handsome Rabbit! Let me follow you.</p>
+  </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
